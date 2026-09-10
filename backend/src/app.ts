@@ -15,7 +15,7 @@ app.use(express.json());
 app.get("/api/health", (_req, res) => {
   res.json({
     success: true,
-    message: "VOLTDX API is running",
+    message: "API is running",
   });
 });
 
