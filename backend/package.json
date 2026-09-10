@@ -20,6 +20,7 @@
     "zod": "^4.6.1"
   },
   "devDependencies": {
+    "@types/express": "^5.0.6",
     "@types/node": "^22.20.2",
     "@types/pg": "^8.23.1"
   }
