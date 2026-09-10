@@ -18,5 +18,9 @@
     "express": "^5.2.1",
     "pg": "^8.23.0",
     "zod": "^4.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "@types/pg": "^8.23.1"
   }
 }
