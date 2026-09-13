@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import contactRoutes from "./routes/contact.routes.js";
+import contentRoutes from "./routes/content.routes.js";
 
 const app = express();
 
@@ -20,5 +21,6 @@ app.get("/api/health", (_req, res) => {
 });
 
 app.use("/api/contact", contactRoutes);
+app.use("/api/content", contentRoutes);
 
 export default app;

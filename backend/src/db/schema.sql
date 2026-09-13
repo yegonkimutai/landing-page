@@ -5,4 +5,14 @@ CREATE TABLE inquiries (
     subject VARCHAR(200) NOT NULL
     message TEXT NOT NULL
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)
+);
+
+CREATE TABLE content_items (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
+    description TEXT NOT NULL,
+    content_type VARCHAR(50) NOT NULL DEFAULT 'General',
+    status VARCHAR(20) NOT NULL DEFAULT 'Published',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
