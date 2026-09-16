@@ -6,15 +6,16 @@ import {
   updateContent,
   deleteContent,
 } from "../controllers/content.controller.js";
+import { authenticate } from "../middleware/auth.middleware.js";
 
 const router = Router();
 
-router.get("/", getContent);
+router.get("/", authenticate, getContent);
 
-router.post("/", createContent);
+router.post("/", authenticate, createContent);
 
-router.put("/:id", updateContent);
+router.put("/:id", authenticate, updateContent);
 
-router.delete("/:id", deleteContent);
+router.delete("/:id", authenticate, deleteContent);
 
 export default router;
