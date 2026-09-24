@@ -1,4 +1,4 @@
-import { useState, SubmitEvent } from "react";
+import { useState, type SubmitEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { registerUser, saveAuth } from "../services/auth";
 
@@ -65,7 +65,7 @@ export default function Register() {
 
         <form
           onSubmit={handleSubmit}
-          className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8"
+          className="rounded-2xl border border-white/10 bg-white/3 p-6 sm:p-8"
         >
           {error && (
             <div className="mb-5 rounded-lg border border-red-400/30 bg-red-400/10 p-4 text-sm text-red-400">
