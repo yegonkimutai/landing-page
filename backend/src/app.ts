@@ -3,6 +3,7 @@ import cors from "cors";
 import contactRoutes from "./routes/contact.routes.js";
 import contentRoutes from "./routes/content.routes.js";
 import authRoutes from "./routes/auth.routes.js";
+import userRoutes from "./routes/user.routes.js";
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.get("/api/health", (_req, res) => {
 
 app.use("/api/contact", contactRoutes);
 app.use("/api/content", contentRoutes);
-app.use("/api/auth", authRoutes );
+app.use("/api/auth", authRoutes);
+app.use("/api/users", userRoutes);
 
 export default app;

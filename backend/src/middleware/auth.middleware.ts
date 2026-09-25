@@ -25,8 +25,7 @@ export function authenticate(
       });
     }
 
-    const [scheme, token] =
-      authHeader.split(" ");
+    const [scheme, token] = authHeader.split(" ");
 
     if (
       scheme !== "Bearer" ||
